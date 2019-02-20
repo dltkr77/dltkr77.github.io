@@ -3,7 +3,7 @@ title_left    : "Isaac's "
 title_right   : "workspace" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "bigdata, spark, hadoop, deep learning, data engineering"
-url           : https://heiswayi.github.io/thinkspace # site url
+url           : https://dltkr77.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
