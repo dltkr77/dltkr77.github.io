@@ -5,18 +5,35 @@
     <description>Minimalist Jekyll theme for technical writing blog.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Feb 2019 21:06:27 +0900</pubDate>
-    <lastBuildDate>Wed, 20 Feb 2019 21:06:27 +0900</lastBuildDate>
+    <pubDate>Thu, 21 Feb 2019 13:32:29 +0900</pubDate>
+    <lastBuildDate>Thu, 21 Feb 2019 13:32:29 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Hello Jekyll</title>
-        <description>&lt;h2 id=&quot;안녕&quot;&gt;안녕&lt;/h2&gt;
-&lt;p&gt;지킬&lt;/p&gt;
+        <title>지킬 포스트에 기본 메타데이터 적용하기</title>
+        <description>&lt;p&gt;포스트를 쉽게 올리기 위해 지킬의 &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-admin&lt;/code&gt; 플러그인을 사용하던 중 매번 메타데이터를 입력해 줘야 하는 것이 불편하여, 기본 값을 적용하는 방법을 찾아보았다.&lt;/p&gt;
+
+&lt;h2 id=&quot;설정-전&quot;&gt;설정 전&lt;/h2&gt;
+&lt;p&gt;이미 &lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;의 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;post&lt;/code&gt;로 설정해야 되는 것을 알고 있는 상황임에도 매번 아래와 같이 메타데이터를 입력해 줘야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/before_jekyll_admin.png&quot; alt=&quot;기본 메타데이터 설정 전&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;설정-후&quot;&gt;설정 후&lt;/h2&gt;
+&lt;p&gt;아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;defaults&lt;/code&gt; 설정을 추가하면 된다.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults:
+  -
+    scope:
+      path: &quot;&quot;
+      type: &quot;posts&quot;
+    values:
+      layout: &quot;post&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;keywords&lt;/code&gt; 등 별도로 필요한 메타데이터만 편집을 하면 된다. :)&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Feb 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2019/hello-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/hello-jekyll/</guid>
+        <pubDate>Thu, 21 Feb 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019/jekyll-admin_default_metadata/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/jekyll-admin_default_metadata/</guid>
         
         
       </item>
